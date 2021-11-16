@@ -1,0 +1,139 @@
+/*declaraciones*/
+
+:root{
+    --negro: #292929;
+    --blanco: white;
+    --casi_blanco: rgb(253, 253, 253);
+    --gris: #EBFAEF;
+    --pop_verde: #35CC61;
+    --gris_oscuro: #33475B;
+    --tipo_texto: 'Rubik', sans-serif;
+    --tipo_titulo: 'Baloo Bhai 2', sans-serif;
+  }
+
+/*general*/
+
+body{
+    background-color: var(--casi_blanco);
+}
+
+main{
+    padding: 20px;
+    font-family: var(--tipo_texto);
+}
+
+/*encabezados*/
+
+h1.h_principal{
+    font-family: var(--tipo_titulo);
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -.1px;
+}
+
+p.rrss_text{
+    font-family: var(--tipo_texto);
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 36px;
+    padding-top: 0px;
+}
+
+h2.h_form{
+    font-family: var(--tipo_titulo);
+    margin: 0;
+    padding-bottom: 20px;
+    color: var(--gris_oscuro);
+}
+
+/*section*/
+
+section{
+    padding-bottom: 30px;
+    /*text-align: center;*/
+    padding-right: auto;
+    padding-left: auto;
+}
+
+ul{
+    padding-left: 0px;
+}
+
+li{
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a.reach_mail{
+    color: var(--pop_verde);
+}
+
+p.reach_text{
+    margin-top: 36px;
+    padding-top: 0px;
+    margin-bottom: 8px;
+}
+
+/*form*/
+
+form{
+    background-color: var(--gris);
+    padding: 20px;
+}
+
+div{
+    padding-bottom: 20px;
+}
+
+label{
+    border: 0.1px;
+    color: var(--gris_oscuro);
+}
+
+input{
+    padding: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+button.boton_form{
+    background-color: var(--pop_verde);
+    padding: 72px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: var(--tipo_titulo);
+    color: var(--blanco);
+    border-radius: 5px;
+    font-size: 18px;
+    border: 0;
+}
+
+/*media query*/
+
+@media all and (min-width: 600px){
+    main{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    section{
+        padding-right: 30px;
+    }
+    form{
+        float: right;
+    }
+}
+
+@media all and (min-width: 1024px){
+    main{
+        display: flex;
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        /*background-color: lightyellow;*/
+    }
+    section{
+        /*background-color: mediumpurple;*/
+    }
+}
